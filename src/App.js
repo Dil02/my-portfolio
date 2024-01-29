@@ -5,8 +5,7 @@ import { AnimatedRoutes } from './Components/AnimatedRoutes.js';
 function App() {
   return (
     <div className="App">
-      <h1>Hi</h1>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <AnimatedRoutes></AnimatedRoutes>
       </Router>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
