@@ -1,0 +1,16 @@
+.myAccordion{
+    width: 21rem;
+}
+
+.myDivider{
+    border-bottom: 0.25em dashed rgb(210, 210, 210);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.mySkillsFooter{
+    position: relative;
+    bottom: 0em;
+    text-align: center;
+    justify-content: center;
+}

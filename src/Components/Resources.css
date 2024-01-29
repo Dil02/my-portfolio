@@ -1,0 +1,14 @@
+.myResourcesFooter{
+    position: relative;
+    bottom: 0em;
+    text-align: center;
+}
+
+.Categories{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 85dvh;
+}

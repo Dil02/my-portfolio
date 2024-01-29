@@ -1,0 +1,15 @@
+.myProjectsFooter{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+
+.myAdherenceImage{
+    height: auto;
+    width: 75%;
+}
+
+.myProjectsImages{
+    border: solid 0.05em black;
+    border-radius: 0.2em;
+}
