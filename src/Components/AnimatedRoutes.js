@@ -17,7 +17,7 @@ export const AnimatedRoutes = () => {
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Album/:pictureName" element={<Album/>}/>
-                <Route path="portfolio/About" element={<About/>}/>
+                <Route path="/About" element={<About/>}/>
                 <Route path="/Books" element={<Books/>}></Route>
                 <Route path="/Gallery" element={<Gallery/>}/>
                 <Route path="/Projects" element={<Projects/>}></Route>
