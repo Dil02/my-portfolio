@@ -5,6 +5,7 @@ import { AnimatedRoutes } from './Components/AnimatedRoutes.js';
 function App() {
   return (
     <div className="App">
+      <h1>Hi</h1>
       <Router>
         <AnimatedRoutes></AnimatedRoutes>
       </Router>
