@@ -1,8 +1,17 @@
 import './App.css';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom'; /* Changed from BrowserRouter to HashRouter due to GitHub Pages */
 import { AnimatedRoutes } from './Components/AnimatedRoutes.js';
 import { PageFooter } from './Components/PageFooter.js';
 import { PageNavbar } from './Components/PageNavbar.js';
+
+/*
+Changes to get React app working with GitHub Pages:
+- Using Hash Router instead of BrowserRouter
+- 'href' attributes in PageNavbar now begin with '#'
+- Added '"homepage": "http://dil02.github.io/my-portfolio/#" ' in package.json
+- Added ' "predeploy": "npm run build", "deploy": "gh-pages -d build",' in package.json
+- Added 'process.env.PUBLIC_URL' to src imports for all images located in the public folder
+*/
 
 function App() {
   return (
