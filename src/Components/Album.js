@@ -1,16 +1,14 @@
 import { useParams } from "react-router-dom"
-import { PageNavbar } from './PageNavbar'
 import { Carousel, CarouselCaption, Container,Image } from "react-bootstrap"
 import { motion } from 'framer-motion'
 import './Album.css'
-import { PageFooter } from "./PageFooter"
 import { Row, Col } from "react-bootstrap"
 
 export const Album = () => {
 
      let { pictureName } = useParams()
 
-    const GeoTrip = [{name: "Freshwater Bay- Start Point", date: "2nd February 2019", url: "/Photos/GeoTrip/Freshwater Bay- Start Point.jpg"},
+    const FieldTrip = [{name: "Freshwater Bay- Start Point", date: "2nd February 2019", url: "/Photos/GeoTrip/Freshwater Bay- Start Point.jpg"},
         {name: "Mattiscombe Sands", date: "2nd February 2019", url: "/Photos/GeoTrip/Mattiscombe Sands.jpg"},
         {name: "Mattiscombe Sands", date: "2nd February 2019", url: "/Photos/GeoTrip/Mattiscombe Sands 2.jpg"},
     ]
@@ -26,7 +24,7 @@ export const Album = () => {
         {name: "Sky Garden", date: "25th August 2022", url: "/Photos/UK/Sky Garden.jpg"}
     ]
 
-    const VED = [
+    const Vehicles = [
         {name: "2017 Ford GT", date: "19th September 2023", url: "/Photos/VED/Ford GT.jpg"},
         {name: "1969 Ford GT40", date: "19th September 2023", url: "/Photos/VED/Ford GT40.jpg"},
         {name: "1998 Paul Smith Mini", date: "19th September 2023", url: "/Photos/VED/Paul Smith Mini.jpg"},
@@ -49,7 +47,7 @@ export const Album = () => {
 
     var photos = []
 
-    pictureName===":VED" ? photos=VED : photos=GeoTrip
+    pictureName===":Vehicles" ? photos=Vehicles : photos=FieldTrip
     if(pictureName===":UK"){
         photos=UK
     }
@@ -60,37 +58,30 @@ export const Album = () => {
         photos=Seychelles
     }
     
-    
-
-
 
     return (
-        <div className="Album">
-            <PageNavbar></PageNavbar>
-            <motion.div className="myAlbum" initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
-                <Container>
-                    <Row>
-                        <Col>
-                            <h6 className="albumName display-6">{pictureName.substring(1)}</h6>
-                            <Carousel  data-bs-theme="dark" pause="hover" interval={3000} className="myCarousel">
-                            {photos.map((photo, key) => {
-                            return (
-                                    <Carousel.Item key={key}>
-                                        <Image className="myAlbumImages" fluid src={photo.url}></Image>
-                                        <div className="myCaption">
-                                            <h4>{photo.name}</h4>
-                                            <p>{photo.date}</p>
-                                        </div>
-                                        <CarouselCaption>
-                                        </CarouselCaption>
-                                    </Carousel.Item>
-                                    )})}
-                            </Carousel>
-                        </Col>
-                    </Row>
-                </Container>
-            </motion.div>
-            <motion.footer className="myAlbumFooter"><PageFooter></PageFooter></motion.footer>
-        </div>
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className="Album">
+            <Container>
+                <Row>
+                    <Col>
+                        <h6 className="albumName display-6">{pictureName.substring(1)}</h6>
+                        <Carousel  data-bs-theme="dark" pause="hover" interval={3000} className="myCarousel">
+                        {photos.map((photo, key) => {
+                        return (
+                                <Carousel.Item key={key}>
+                                    <Image className="myAlbumImages" fluid src={photo.url}></Image>
+                                    <div className="myCaption">
+                                        <h4>{photo.name}</h4>
+                                        <p>{photo.date}</p>
+                                    </div>
+                                    <CarouselCaption>
+                                    </CarouselCaption>
+                                </Carousel.Item>
+                                )})}
+                        </Carousel>
+                    </Col>
+                </Row>
+            </Container>
+        </motion.div>
     )
 }

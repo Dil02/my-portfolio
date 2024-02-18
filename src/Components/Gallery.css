@@ -1,6 +1,7 @@
 .Gallery{
     min-height: 100dvh;
 }
+
 .Portrait{
     width: 100%;
     height: auto;
@@ -9,11 +10,4 @@
 .Landscape{
     width: 100%;
     height: auto;
-}
-
-.myGalleryFooter{
-    position: relative;
-    bottom: 0em;
-    text-align: center;
-    margin-top: 1em;
 }

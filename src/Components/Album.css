@@ -9,12 +9,6 @@
     min-height: 100dvh;
 }
 
-.myAlbumFooter{
-    position: relative;
-    bottom: 0;
-    text-align: center;
-}
-
 .albumName{
     text-align: center;
 }

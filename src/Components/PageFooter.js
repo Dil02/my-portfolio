@@ -1,8 +1,11 @@
+import './PageFooter.css';
+
 export const PageFooter = () => {
     function getYear () {
         return new Date().getFullYear().toString()
     }
+
     return (
-        <p>© {getYear()} Dilkush Punja</p>
+        <p className='pageFooter'>© {getYear()} Dilkush Punja</p>
     )
 }
