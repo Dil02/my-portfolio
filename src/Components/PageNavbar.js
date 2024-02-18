@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export const PageNavbar = () => {
@@ -19,6 +20,10 @@ export const PageNavbar = () => {
                             <Nav.Link href="#/About">About</Nav.Link>
                             <Nav.Link href="#/Gallery">Gallery</Nav.Link>
                             <Nav.Link href="#/Projects">Projects</Nav.Link>
+                            {/* <NavDropdown title="Projects" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="Projects#Group">Group</NavDropdown.Item>
+                                <NavDropdown.Item href="Projects#Individual">Individual</NavDropdown.Item>
+                            </NavDropdown> */}
                             <Nav.Link href="#/Resources">Resources</Nav.Link>
                             <Nav.Link href="#/Skills">Skills</Nav.Link>
                         </Nav>
