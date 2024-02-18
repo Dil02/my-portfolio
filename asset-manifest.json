@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.eb01c31d.css",
+    "main.js": "/my-portfolio/static/js/main.16893251.js",
+    "static/js/787.7da95b79.chunk.js": "/my-portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/Mentor Matcher.mp4": "/my-portfolio/static/media/Mentor Matcher.76d4163f6e6c9d3e58c3.mp4",
+    "static/media/MyAdherence2.jpg": "/my-portfolio/static/media/MyAdherence2.a9c51cac34bf2acb293a.jpg",
+    "static/media/MyAdherence1.jpg": "/my-portfolio/static/media/MyAdherence1.19ff32c0f71fa387348f.jpg",
+    "static/media/Ford Logo.png": "/my-portfolio/static/media/Ford Logo.7da8723d89a32152663a.png",
+    "static/media/KHS Logo.jpg": "/my-portfolio/static/media/KHS Logo.e6616bf01e80a701c3a4.jpg",
+    "static/media/The Goal.jpg": "/my-portfolio/static/media/The Goal.da649647793be4340c4b.jpg",
+    "static/media/Feel Good Productivity.jpg": "/my-portfolio/static/media/Feel Good Productivity.58f92ae55fa428b28f74.jpg",
+    "static/media/an adventure.png": "/my-portfolio/static/media/an adventure.5c4d0f566aa860090af5.png",
+    "static/media/pointless.png": "/my-portfolio/static/media/pointless.a33462431eb50b2cfbe0.png",
+    "static/media/AI Society Logo.png": "/my-portfolio/static/media/AI Society Logo.0ca920845f591448f160.png",
+    "static/media/St Luke's Logo.jpg": "/my-portfolio/static/media/St Luke's Logo.96ee4c2701e90c99ff84.jpg",
+    "static/media/QM Logo.png": "/my-portfolio/static/media/QM Logo.1ce2c7dda82509efc926.png",
+    "static/media/instagram.png": "/my-portfolio/static/media/instagram.56d3c2ef9b43e98875c0.png",
+    "static/media/github.png": "/my-portfolio/static/media/github.f11021803f68852df283.png",
+    "static/media/email.png": "/my-portfolio/static/media/email.e2d89cdc1960341d4df5.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.eb01c31d.css.map": "/my-portfolio/static/css/main.eb01c31d.css.map",
+    "main.16893251.js.map": "/my-portfolio/static/js/main.16893251.js.map",
+    "787.7da95b79.chunk.js.map": "/my-portfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb01c31d.css",
+    "static/js/main.16893251.js"
+  ]
+}
