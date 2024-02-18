@@ -3,6 +3,7 @@ import { Carousel, CarouselCaption, Container,Image } from "react-bootstrap"
 import { motion } from 'framer-motion'
 import './Album.css'
 import { Row, Col } from "react-bootstrap"
+import { PageNavbar } from './PageNavbar.js';
 
 export const Album = () => {
 
@@ -60,28 +61,31 @@ export const Album = () => {
     
 
     return (
-        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className="Album">
-            <Container>
-                <Row>
-                    <Col>
-                        <h6 className="albumName display-6">{pictureName.substring(1)}</h6>
-                        <Carousel  data-bs-theme="dark" pause="hover" interval={3000} className="myCarousel">
-                        {photos.map((photo, key) => {
-                        return (
-                                <Carousel.Item key={key}>
-                                    <Image className="myAlbumImages" fluid src={photo.url}></Image>
-                                    <div className="myCaption">
-                                        <h4>{photo.name}</h4>
-                                        <p>{photo.date}</p>
-                                    </div>
-                                    <CarouselCaption>
-                                    </CarouselCaption>
-                                </Carousel.Item>
-                                )})}
-                        </Carousel>
-                    </Col>
-                </Row>
-            </Container>
-        </motion.div>
+        <div>
+            <PageNavbar></PageNavbar>
+            <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className="Album">
+                <Container>
+                    <Row>
+                        <Col>
+                            <h6 className="albumName display-6">{pictureName.substring(1)}</h6>
+                            <Carousel  data-bs-theme="dark" pause="hover" interval={3000} className="myCarousel">
+                            {photos.map((photo, key) => {
+                            return (
+                                    <Carousel.Item key={key}>
+                                        <Image className="myAlbumImages" fluid src={photo.url}></Image>
+                                        <div className="myCaption">
+                                            <h4>{photo.name}</h4>
+                                            <p>{photo.date}</p>
+                                        </div>
+                                        <CarouselCaption>
+                                        </CarouselCaption>
+                                    </Carousel.Item>
+                                    )})}
+                            </Carousel>
+                        </Col>
+                    </Row>
+                </Container>
+            </motion.div>
+        </div>
     )
 }

@@ -11,12 +11,13 @@ Changes to get React app working with GitHub Pages:
 - Added '"homepage": "http://dil02.github.io/my-portfolio/#" ' in package.json
 - Added ' "predeploy": "npm run build", "deploy": "gh-pages -d build",' in package.json
 - Added 'process.env.PUBLIC_URL' to src imports for all images located in the public folder
+- Had to place the 'PageNavbar' inside of each component, instead of having it in App.js. Otherwise, it won't collapse.
 */
 
 function App() {
   return (
     <div className="App">
-      <PageNavbar></PageNavbar>
+      {/* <PageNavbar></PageNavbar> */}
       <Router>
         <AnimatedRoutes></AnimatedRoutes>
       </Router>
